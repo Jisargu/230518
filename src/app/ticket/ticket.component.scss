@@ -1,0 +1,31 @@
+$borde_contenido:blue;
+$letra_contenido: blue;
+$borde_encabezado: red;
+$letra_encabezado: red;
+$ticket_encabezado: red;
+$ticket_contenido:blue;
+$letra_footer: red;
+.cabeceraArticulo{
+    border-color: $borde_encabezado;
+    border-style: solid;
+    border-width: 2px;
+    color: $letra_encabezado;
+}
+.contenidoArticulo{
+    border-color: $borde_contenido;
+    border-style: solid;
+    border-width: 2px;
+    color: $borde_contenido;
+}
+.cabeceraTicket{
+    border-bottom: 2px solid $ticket_encabezado;
+    color: $ticket_encabezado; 
+}
+.contenidoTicket{
+    border-bottom: 2px solid $ticket_contenido;
+    color: $ticket_contenido; 
+}
+.footer{
+    color: $letra_footer;
+    text-decoration: underline;
+}

@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row">
+<div class="col-6">
+<h5>{{tituloDatosArticulo}}</h5>
+<table>
+  <tbody>
+    <tr>
+      <input type="text" class="txt cabeceraArticulo" name="nombre_articulo" placeholder="Nombre del artículo" [(ngModel)]="nombreArticulo">
+    </tr>
+    <tr>
+      <input type="text" class="txt contenidoArticulo" name="cantidad_articulo" placeholder="Cantidad" [(ngModel)]="cantidadArticulo">
+    </tr>
+    <tr>
+      <input type="text" class="txt contenidoArticulo" name="precio_articulo" placeholder="Precio" [(ngModel)]="precioArticulo">
+    </tr>
+  </tbody>
+</table>
+
+
+
+</div>
+<div class="col-6">
+<h5>{{tituloTicket}}</h5>
+<table class="table">
+  <tbody>
+    <tr class="cabeceraTicket">
+      <th>{{tabla_fila_1}}</th>
+      <td>{{cantidadArticulo}}</td>
+    </tr>
+    <tr class="cabeceraTicket">
+      <th>{{tabla_fila_2}}</th>
+      <td>{{precioArticulo}}</td>
+    </tr>
+    <tr class="contenidoTicket">
+      <th>{{tabla_fila_3}}</th>
+      <td>{{cantidadArticulo*precioArticulo}}</td>
+    </tr>
+    <tr class="contenidoTicket">
+      <th>{{tabla_fila_4}}</th>
+      <td>{{IVA}}</td>
+    </tr>
+    <tr class="contenidoTicket">
+      <th>{{tabla_fila_5}}</th>
+      <td>{{(cantidadArticulo*precioArticulo)*1.16}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+  </div>
+  <div class="row justify-content-center mt-5">
+      <div class="col-10">
+    <h3 class="footer">Compraste {{cantidadArticulo}} {{nombreArticulo}} y el total es {{(cantidadArticulo*precioArticulo)*1.16}}</h3>
+    </div>
+    </div>
+</div>
