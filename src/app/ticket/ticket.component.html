@@ -47,7 +47,7 @@
   <div class="row justify-content-center mt-5 gradiente">
     <div class="col-10">
       <h3 id="footer_resultado" class="footer">
-        <span class="gradiente_texto">Compraste {{cantidadArticulo}} {{nombreArticulo}} y el total es {{(cantidadArticulo*precioArticulo)*1.16}}</span>
+        <span *ngIf="(cantidadArticulo>0) && (nombreArticulo!='') && (precioArticulo>0)" class="gradiente_texto">Compraste {{cantidadArticulo}} {{nombreArticulo}} y el total es {{(cantidadArticulo*precioArticulo)*1.16}}</span>
       </h3>
     </div>
   </div>
