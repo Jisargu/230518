@@ -5,27 +5,39 @@ $letra_encabezado: red;
 $ticket_encabezado: red;
 $ticket_contenido:blue;
 $letra_footer: red;
-.cabeceraArticulo{
-    border-color: $borde_encabezado;
-    border-style: solid;
-    border-width: 2px;
-    color: $letra_encabezado;
+.cabeceraArticulo {
+  border-color: $borde_encabezado;
+  border-style: solid;
+  border-width: 2px;
+  color: $letra_encabezado;
 }
-.contenidoArticulo{
-    border-color: $borde_contenido;
-    border-style: solid;
-    border-width: 2px;
-    color: $borde_contenido;
+
+.contenidoArticulo {
+  border-color: $borde_contenido;
+  border-style: solid;
+  border-width: 2px;
+  color: $borde_contenido;
 }
-.cabeceraTicket{
-    border-bottom: 2px solid $ticket_encabezado;
-    color: $ticket_encabezado; 
+
+.cabeceraTicket {
+  border-bottom: 2px solid $ticket_encabezado;
+  color: $ticket_encabezado;
 }
-.contenidoTicket{
-    border-bottom: 2px solid $ticket_contenido;
-    color: $ticket_contenido; 
+
+.contenidoTicket {
+  border-bottom: 2px solid $ticket_contenido;
+  color: $ticket_contenido;
 }
-.footer{
-    color: $letra_footer;
-    text-decoration: underline;
+
+.footer {
+  color: $letra_footer;
+  text-decoration: underline;
+}
+
+.gradiente_texto {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }

@@ -13,9 +13,9 @@ export class TicketComponent implements OnInit {
   tabla_fila_3: string='Subtotal';  
   tabla_fila_4: string='IVA';  
   tabla_fila_5: string='Total';  
-  nombreArticulo: string='Limón';
-  cantidadArticulo: number=1;
-  precioArticulo: number=1;
+  nombreArticulo: string='';
+  cantidadArticulo: number;
+  precioArticulo: number;
   IVA: number=16;
   constructor() { }
 
