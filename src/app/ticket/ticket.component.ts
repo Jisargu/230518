@@ -20,6 +20,7 @@ export class TicketComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
